@@ -1,0 +1,241 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar{
+  width: 0.4em;
+  height: 0.3em;
+}
+::-webkit-scrollbar-track{
+  background: rgb(255, 255, 255);
+  margin-left: 60px;
+}
+::-webkit-scrollbar-thumb{
+  background: rgb(145, 142, 142);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(82, 82, 85);
+}
+
+#preloader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s ease-in-out;
+}
+#preloader>img{
+    width: 200px;
+    height: 200px;
+    animation: spin 5s linear infinite;
+}
+.homeLink{
+    display: flex;
+    gap: 8px;
+    font-weight: 600;
+    align-items: center;
+    width: 300px;
+  }
+  .homeLink>img{
+    width: 60px;
+    height: 60px;
+  }
+  .homeLink> h2{
+    font-size: 1.5rem;
+  }
+
+
+
+
+.userBtn{
+  display: flex;
+  gap: 10px;
+  text-align: right;
+  align-items: center;
+  margin-right: 10px;
+  position: relative;
+  min-width: fit-content;
+}
+.userBtn p:first-of-type{
+  font-size: 1.1em;
+  /* line-height: 1em; */
+}
+.userBtn p:last-of-type{
+  font-size: 0.8em;
+  /* line-height: 1em; */
+}
+.userBtn img{
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #3c3c3ca0;
+}
+.vr{
+  border-left: 1px solid #aeaeae;
+  height: 40px;
+  margin-right: 8px;
+  width: 1px;
+}
+.notif_btn{
+  font-size: 1.3em;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 50%;
+  transition: 0.25s ease-in-out;
+}
+.notif_btn:hover{
+  background: #3c3c3ca9;
+}
+.user_btn_dropdown{
+  cursor: pointer;
+}
+.notfound_bg {
+  background-image: linear-gradient(to bottom, rgb(255 255 255 / 0%), rgb(255 255 255 / 29%), rgb(23 23 23 / 32%), rgb(0 0 0 / 58%)), url('/404bg.jpg');
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.user_menu{
+  position: absolute;
+  background: #fff;
+  color: #000000;
+  top:55px;
+  padding: 5px;
+  right: -10px;
+  border-radius: 10px;
+  width: 200px;
+  display: flex;
+  border: 1px solid #c8c8c8;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 999;
+  animation: fadedown 0.3s;
+}
+.user_menu> *{
+  text-align: left;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.25s;
+  border-radius: 8px;
+  border: 1px solid grey;
+  width: 100%;
+  cursor: pointer;
+  font-weight: 400;
+}
+.user_menu> *> *{
+  font-size: 1.2em;
+}
+.user_menu> button{
+  color: rgb(225, 5, 5);
+  border: 1px solid rgb(237, 10, 10);
+}
+.user_menu> *:hover{
+  background: #afafaf3b;
+}
+.user_menu > hr{
+  width: 100%;
+  border-top: 1px solid grey;
+}
+.map{
+  width: 100%;
+  min-width: 250px;
+  height: 100%;
+  min-height: 300px;
+  border-radius: 15px;
+  z-index: 40;
+}
+.leaflet-control-attribution{
+  display: none;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+@keyframes fadeup{
+  from{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 1s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes fadedown{
+  from{
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+#preloader>h2{
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.custom-button {
+  @apply flex-1 min-w-[80px] font-semibold p-1 rounded-md hover:border-red-700 border-[#84060600] border-b-[3px] transition-all;
+}
+
+.custom-button-active {
+  @apply bg-red-700 text-white;
+}
+
+.custom-button-inactive {
+  @apply bg-[#f3f4f6] text-red-700;
+}
+
+.faq-content ol{
+  @apply list-decimal ml-5
+}
+.faq-content li{
+  @apply mb-4;
+}
+
+.leaflet-marker-icon {
+    border: 0px !important;
+    border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+    .homeLink{
+      width: 60px;
+    }
+    .homeLink> h2 {
+      display: none;
+  }
+  }
+
+@media (min-width: 600px) {
+    .hideSearchBar{
+      display: none;
+    }
+  }

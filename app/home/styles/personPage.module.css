@@ -1,0 +1,30 @@
+.activity_switcher{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    align-items: center;
+    gap: 5px;
+}
+.activity_switcher> label{
+    font-weight: 600;
+    width: 25%;
+    padding: 7px 14px;
+    border-bottom: 2px solid #84060600;
+    cursor: pointer;
+    background: #f3f4f6;
+    text-align: center;
+    transition: 0.25s;
+    border-radius: 7px;
+}
+.activity_switcher> label:hover{
+    border-bottom: 2px solid #840606;
+}
+@media (max-width: 410px) {
+    .activity_switcher > label{
+        width: fit-content;
+    }
+    .activity_switcher{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

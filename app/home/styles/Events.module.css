@@ -1,0 +1,204 @@
+.eventsMain{
+    display: flex;
+    width: 100%;
+    overflow-y: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.eventDetail{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    overflow-y: auto;
+}
+.eventDetail > div> img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 1px solid #8b0707;
+}
+.eventTiles{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    overflow-x: auto;
+    flex-shrink: 0;
+    padding: 0 20px 20px 20px;
+}
+.eventTile{
+    border-radius: 15px;
+    height: 300px;
+    border: 1.5px solid #c90a0a;
+    overflow: hidden;
+    flex-basis: 270px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 270px;
+    transition: 0.25s;
+}
+.eventTile:hover{
+    border-bottom: 5px solid #c90a0a;
+}
+.eventTile> div{
+    position: relative;
+    padding: 12px 10px 10px 10px;
+}
+.eventTile img{
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+}
+.EventsHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+}
+.EventsHeader> a{
+    color: #fff;
+    background: rgb(189, 9, 9);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.25s;
+}
+.EventsHeader> a:hover{
+    scale: 1.05;
+}
+.eventDate{
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    width: 50px;
+    height: 60px;
+    text-align: center;
+    background: #c90a0a;
+    color: #fff;
+    padding: 5px;
+    font-weight: 600;
+}
+.eventCategoriesWrapper{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px 20px 20px;
+}
+.eventCategoriesWrapper a{
+    font-size: 0.85em;
+    border-radius: 10px;
+    padding: 14px;
+    border: 1px solid #b40606;
+    width: 160px;
+    display: flex;
+    height: 65px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    transition: all 0.25s ease-in-out;
+}
+.eventCategoriesWrapper  a:hover{
+    background: #b40606;
+    color: #fff;
+}
+.eventFormWrapper{
+    padding: 15px;
+    width: 100%;
+    overflow-y: auto;
+}
+.inputsWrapper{
+    margin: 0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.inputFirst{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.inputFirst> section{
+    flex-grow: 1;
+}
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    margin-top: 20px;
+}
+.formGroup> label{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.formGroup > input, .formGroup > select, .formGroup > textarea{
+    border-bottom: 2px solid #50363600;
+    border-radius: 5px;
+    padding: 5px;
+    background: #f5e2e2;
+    width: 100%;
+    min-width: 250px;
+    transition: 0.25s;
+}
+.formGroup > textarea{
+    padding: 8px 12px;
+    min-height: 200px;
+    white-space: pre-wrap;
+}
+.formGroup > input:focus, .formGroup > select:focus, .formGroup > textarea:focus{
+    outline: none;
+    border-bottom: 2px solid #790101;
+}
+.categoryOption{
+    width: 100px;
+    height: 55px;
+    border: 1px solid #790101;
+    color: #790101;
+    transition: 0.25s;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.categoryOption:hover{
+    scale: 1.05;
+}
+.selectedCategory{
+    background: #790101;
+    color: #fff;
+}
+.inputCatwrapper{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.AllEventTiles{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    overflow-x: auto;
+    flex-shrink: 0;
+    padding: 0 20px 20px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mapIframe{
+    height: 500px !important;
+    width: 100%;
+    margin-block: 8px;
+    border-radius: 15px;
+}

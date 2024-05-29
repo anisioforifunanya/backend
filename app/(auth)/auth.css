@@ -1,0 +1,125 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.825), rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.993)), url('/img/authBg.jpg');
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+.homeLink{
+    display: flex;
+    gap: 8px;
+    font-weight: 600;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .homeLink>img{
+    width: 60px;
+    height: 60px;
+  }
+  .homeLink> h2{
+    font-size: 1.5rem;
+  }
+.auth_form{
+    display: flex;
+    width: clamp(250px, 55%, 600px);
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.95em;
+    border-radius: 15px;
+    padding: 18px;
+    background: #0000009d;
+    animation: fade-up 0.8s;
+    /* margin-left: 20px; */
+}
+.form_group{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    animation: fade-up 1.2s;
+}
+.auth_form .form_group{
+    margin-top: 15px;
+}
+
+.form_group input{
+    padding: 8px 5px 5px 7px;
+    border-radius: 5px;
+    border: 0;
+    border-bottom: 2px solid #57575700;
+    background: #000000;
+    transition: none;
+    color: #fff;
+    box-shadow: 0 0 5px #00000026;
+    border: 1px solid #292929;
+  }
+  .form_group input:focus{
+    transition: 0.2s;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #d60101;
+}
+.show_pword{
+  position: absolute;
+  right: 15px;
+  bottom: 13px;
+  cursor: pointer;
+}
+.auth_btn{
+    border: 0;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #26ff05df;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: 0.2s;
+    box-shadow: 0 5px 11px #038c1363;
+    animation: fade-up 1.2s;
+    margin-top: 12px;
+}
+.login_redirect{
+  font-size: 0.9em;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+.login_redirect a{
+  color: rgb(255, 157, 0);
+  text-decoration: underline;
+}
+.gender_form_group label{
+  margin: 0 5px 0 15px;
+}
+.gender_form_group input{
+  cursor: pointer;
+}
+.auth_form a{
+  color: rgb(255, 157, 0);
+  text-decoration: underline;
+  font-size: 0.9em;
+  width: fit-content;
+}
+@keyframes fade-up {
+  0%{
+      opacity: 0;
+      transform: translateY(25px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+@media (max-width:630px) {
+  .auth_form{
+    width: 100%;
+  }
+}

@@ -1,0 +1,333 @@
+.homebg{
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.825), rgba(0, 0, 0, 0.608), rgba(0, 0, 0, 0.993)), url('/img/bg.png');
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
+body{
+  background: black;
+}
+.homebg main{
+  min-height: 80vh;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.mainNav{
+  padding: 10px 20px ;
+}
+.mainNav > nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+}
+.mainNav > nav> ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  text-align: center;
+}
+.mainNav > nav> ul> li div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: all 0.25s ease-in-out;
+  font-size: 1.1rem;
+  width: 75px;
+}
+.mainNav > nav> ul> li div:hover{
+  background-color: rgba(0, 0, 0, 0.521)
+}
+.homeLink{
+  display: flex;
+  gap: 8px;
+  font-weight: 600;
+  align-items: center;
+  width: 300px;
+}
+.homeLink>img{
+  width: 60px;
+  height: 60px;
+}
+.homeLink> h2{
+  font-size: 1.5rem;
+}
+.authLinks{
+  display: flex;
+  gap: 20px;
+  font-weight: 600;
+  justify-content: flex-end;
+  align-items: center;
+  width: 300px;
+}
+.authLinks> a{
+  padding: 8px 16px;
+  border-radius: 60px;
+  background: #000;
+  transition: all 0.1s ease-in-out;
+}
+.authLinks> a:hover{
+  scale: 1.05;
+}
+.authLinks> a:first-of-type{
+  background: #fff;
+  color: #000;
+}
+.mobileNavLinks a{
+  display: inline;
+}
+.mainFooter{
+  background: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #444;
+  height: clamp(200px, 50vh, 400px);
+  gap: 10px;
+}
+.mainFooter  hr{
+  margin: 25px 0;
+}
+.mainFooter> section{
+  width: 30%;
+  height: 100%;
+  padding: 8px;
+}
+.mainFooter> section ul> li a{
+  display: block;
+  padding: 5px 8px;
+  text-decoration: underline;
+}
+.mainFooter> section ul{
+  padding: 8px 8px 0 0;
+}
+.mainFooter> section:first-of-type{
+  margin-right: 20px;
+}
+.mainFooter> section:not(:first-of-type){
+  padding-top: 25px; 
+  width: 28%;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 100vh;
+  padding: 0 40px 60px 40px;
+  animation: fadeup 0.8s ease-in-out;
+}
+.heroText{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 620px;
+}
+.heroText> h1{
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+.heroImg{
+  width: 500px;
+  height: 400px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+.heroImg>img{
+  height: 100%;
+  object-fit: contain;
+  min-width: 300px;
+}
+.landingContent{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  padding: 40px;
+  background: #000000;
+}
+.landingText{
+  margin-top: 50px;
+  max-width: 800px;
+  text-align: center;
+}
+.landingSlider{
+  height: 300px;
+}
+.landingSlider img{
+  height: 300px;
+  border-radius: 30px;
+  object-fit: cover;
+  object-position: center;
+}
+.swiper_nav> div{
+  color: #1a1a1a;
+  background: #ffffffd9;
+  border-radius: 50%;
+  transition:cubic-bezier(0.23, 1, 0.320, 1);
+  padding: 8px;
+  font-size: 1.6rem;
+  height: 30px;
+  width: 30px;
+}
+.swiper_nav> div:hover{
+  background: #ffffff;
+}
+.landingSlider div p{
+  bottom: 0px;
+  position: absolute;
+  font-size: 0.8rem;
+  padding: 15px 15px 10px 15px;
+  min-width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.016), rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.681),  rgba(0, 0, 0, 0.771));
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+  content: none !important;
+}
+.menuBtn{
+  border: none;
+  color: #000;
+  background: #fff;
+  border-radius: 10px;
+  padding: 6px;
+  font-size: 1.3em;
+  display: none;
+}
+.root_map_wrapper{
+  height: calc(100vh - 100px);
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto 20px auto;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.root_map_sidebar{
+  position: absolute;
+  background: #00000089;
+  color: #fff;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  right: 0px;
+  top: 0px;
+  width: 30%;
+  z-index: 48;
+  margin: 20px 20px 20px 0;
+  border-radius: 0 15px 15px 0;
+  min-width: 300px;
+  height: calc(100% - 40px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.leaflet-top, .leaflet-bottom {
+  z-index: 49 !important;
+}
+.root_map_sidebar>h2{
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.map_location{
+  padding: 5px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  transition: all 0.25s ease-in-out;
+  /* border-radius: 10px; */
+}
+.map_location:last-of-type{
+  border-bottom: none;
+}
+.map_location h4{
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.map_location p{
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.map_location:hover{
+  background: #00000052;
+  cursor: pointer;
+}
+@media (max-width: 1050px) {
+  .heroText > h1{
+    font-size: 3em;
+  }
+  .heroText{
+    text-align: center;
+  }
+  .hero{
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainNav > nav > ul, .authLinks{
+    display: none;
+  }
+  .menuBtn{
+    display: unset;
+  }
+  .mainNav > nav{
+    justify-content: space-between;
+  }
+}
+@media (max-width: 600px) {
+  .heroText{
+    align-items: center;
+  }
+  .heroText > p{
+    max-width: 500px;
+  }
+  .heroText > h1{
+    font-size: 1.8em;
+    margin-bottom: 30px;
+  }
+  .hero{
+    padding: 50px 20px 30px 20px;
+  }
+}
+@media (max-width: 400px) {
+  .homeLink{
+    width: 60px;
+  }
+  .homeLink> h2 {
+    display: none;
+}
+}
+@media (max-width: 500px) {
+ .hero{
+    height: fit-content;
+    min-height: 0;
+ }
+ .landingContent{
+    min-height: 0;
+ }
+}
+@media (max-width: 900px) {
+  .mainFooter{
+    flex-direction: column;
+    height: fit-content;
+  }
+  .mainFooter> section {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .heroImg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    height: fit-content;
+  }
+  .heroImg>img {
+    height: 300px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}

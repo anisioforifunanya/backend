@@ -1,0 +1,51 @@
+
+.side_bar{
+    max-width: 220px;
+    width: 50%;
+    padding:15px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.442);
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.195);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.side_bar nav hr{
+    /* margin-left: 5px; */
+    border: 1px solid rgba(178, 178, 178, 0.277);
+}
+.side_bar nav{
+    margin-bottom: 70px;
+    height: 60%;
+}
+.side_bar ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+}
+.side_bar ul li a{
+    padding: 6px 10px;
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
+    font-size: 1.1rem;
+    width: 100%;
+    display: block;
+}
+.side_bar ul li a:hover{
+    background-color: rgba(44, 44, 44, 0.691);
+}
+.sidebarHomeLink{
+    background-color: rgba(44, 44, 44, 0.691);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.335);
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.25s ease-in-out;
+}

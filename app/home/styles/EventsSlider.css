@@ -1,0 +1,107 @@
+:root{
+    --swiper-theme-color : #c9190d;
+
+}
+.swiper {
+    height: 250px;
+    margin: 0;
+    border: 1px solid #fff;
+}
+.sliderContainer{
+  width: 100%;
+}
+.swiper-pagination-bullet{
+  background: #fff;
+}
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .autoplay-progress {
+    position: absolute;
+    display: none !important;
+    font-size: 0.7em;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width:25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+  }
+  
+  /* .autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+  } */
+
+  /* .swiper-button-prev, .swiper-button-next {
+    background: rgba(0, 0, 0, 0.17);
+    margin: 0;
+    backdrop-filter: blur(3px);
+    position: absolute;
+    font-weight: 5px;
+    padding: 20px;
+    top: 0;
+    height: 325px;
+    width: 70px;
+    object-fit: contain;
+    transform-origin: center;
+}
+.swiper-button-prev{
+    left: 0;
+}
+.swiper-button-next{
+    right: 0;
+} */
+.event_slide> img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.event_slide{
+  display: relative;
+  width: 100%;
+  height: 100%;
+}
+.event_slide> div {
+  position: absolute;
+  text-align: left;
+  height: 70%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  bottom: 0px;
+  padding: 15px;
+  padding-top: 30px;
+  width: 100%;
+  background: linear-gradient(to bottom, rgb(0 0 0 / 0%), rgb(0 0 0 / 64%), rgba(0, 0, 0, 0.681), rgb(0 0 0)) !important;
+}

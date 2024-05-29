@@ -1,0 +1,44 @@
+.card{
+    flex-grow: 1;
+    min-width: 250px;
+    max-width: 400px;
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.328);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    cursor: pointer;
+}
+.overlay{
+    height: 100%;
+    width: 100%;
+    transition: 0.25s;
+}
+.overlay:hover{
+    background-color: #00000027
+}
+.userCardBottom img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+}
+.userCardBottom{
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.113), rgba(0, 0, 0, 0.407), rgba(0, 0, 0, 0.681),  rgba(0, 0, 0, 0.771));
+}
+.userCardBottom> div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

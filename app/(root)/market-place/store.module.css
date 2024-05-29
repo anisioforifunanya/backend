@@ -1,0 +1,132 @@
+.bottomPane{
+    display: flex;
+    justify-content: space-between;
+    width: clamp(250px, 100%, 1200px);
+    margin: 70px 0 ;
+    padding: 0 5px 0 20px;
+    gap: 20px;
+}
+.bottomPane aside ul{
+    flex-direction: column;
+    display: flex;
+}
+.bottomPane aside a{
+    padding: 6px 5px;
+    margin-block: 4px;
+    display: block;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+.bottomPane aside a:hover{
+    background: #ebebeb;
+}
+.bottomPane aside{
+    position: sticky;
+    top: 20px;
+    color: black;
+    flex-direction: column;
+    width: clamp(200px, 22%, 280px);
+    border-radius: 10px;
+    box-shadow: 0px 8px 10px 0px #00000034;
+    padding: 10px;
+    background: #fff;
+    height: fit-content;
+}
+.productWrapper{
+    width: clamp(200px, 80%, 1200px);
+    padding: 10px;
+}
+.productList{
+    flex-wrap: wrap;
+    gap: 16px;
+    display: flex;
+    width: 100%;
+    color: black;
+}
+
+.imageContainer{
+    position: relative;
+}
+.overlay{
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    background: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    border-radius: 8px;
+    opacity: 0;
+    transition: 0.3s;
+}
+.overlay p{
+    border: 3px solid #fff;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+/* .productList> div:hover{
+    scale: 1.01;
+} */
+
+.prodCategory{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding: 0 8px;
+}
+.prodCategory p{
+    font-size: 0.8em;
+    padding: 0 5px;
+    font-weight: 600;
+    background: rgb(255, 200, 0);
+    border-radius: 20px;
+}
+.prodDetails{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    align-items: center;
+    padding: 10px;
+}
+.prodDetails> p:last-of-type{
+    color: rgb(58, 196, 3);
+    font-weight: 700;
+    font-size: 1em;
+}
+@media (max-width: 620px) {
+    .bottomPane aside{
+        display: none;
+    }
+    .productWrapper{
+        width: 100%;
+        padding: 10px 20px 10px 10px;
+    }
+    .productWrapper> h2{
+        display: none;
+    }
+    .productList{
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .productList> div{
+        min-width: 160px;
+    }
+}
+@media (max-width: 400px) {
+    .bottomPane{
+        padding: 0;
+    }
+    .productWrapper{
+        padding: 10px;
+    }
+    .productList{
+        gap: 5px;
+    }
+    .productList> div{
+        min-width: 120px;
+        flex-grow: 1;
+    }
+}
